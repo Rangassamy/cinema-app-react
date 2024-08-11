@@ -35,14 +35,20 @@ function Card({ movie }) {
   return (
     <div className="card">
       <img
-        src={`https://image.tmdb.org/t/p/original/${poster_path}`}
+        src={
+          poster_path
+            ? `https://image.tmdb.org/t/p/original/${poster_path}`
+            : "/img/poster.jpg"
+        }
         alt={`${title} Poster`}
       />
       <h2>{title}</h2>
       <h5>Date de sortie : {release_date}</h5>
       <h4>
         Note : {vote_average.toFixed(2)} / 10
-        <span></span>
+        <span>
+          <i class="fa-solid fa-star"></i>
+        </span>
       </h4>
       <ul>
         {genre_ids.map((id) => (

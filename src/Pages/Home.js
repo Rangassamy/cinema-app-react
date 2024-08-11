@@ -14,8 +14,6 @@ function Home() {
 
   return (
     <div>
-      <h1>Accueil</h1>
-      <h2>Liste des films</h2>
       <div
         className="card-container"
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
