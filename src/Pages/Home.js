@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Components/Card";
 import "../styles/index.scss";
+import Form from "../Components/Form";
 function Home() {
   const [movies, setMovies] = useState([]);
 
@@ -14,6 +15,7 @@ function Home() {
 
   return (
     <div>
+      <Form />
       <div
         className="card-container"
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
