@@ -6,7 +6,12 @@ const Form = () => {
     <div className="form-component">
       <div className="form-container">
         <form>
-          <input type="text" placeholder="Votre texte" />
+          <input
+            type="text"
+            placeholder="Votre texte"
+            id="search "
+            autoComplete="off"
+          />
           <input type="submit" value="Soumettre" />
         </form>
         <div className="btn-sort-container">
