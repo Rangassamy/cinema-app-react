@@ -9,7 +9,7 @@ const Form = () => {
           <input
             type="text"
             placeholder="Votre texte"
-            id="search "
+            id="search"
             autoComplete="off"
           />
           <input type="submit" value="Soumettre" />

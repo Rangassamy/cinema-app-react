@@ -10,14 +10,18 @@ function Header() {
           <li>
             <NavLink exact to="/" activeClassName="nav-active">
               {({ isActive }) => (
-                <a className={isActive ? "nav-active" : ""}>Home</a>
+                <a href className={isActive ? "nav-active" : ""}>
+                  Home
+                </a>
               )}
             </NavLink>
           </li>
           <li>
             <NavLink to="/coup-de-coeur" activeClassName="nav-active">
               {({ isActive }) => (
-                <a className={isActive ? "nav-active" : ""}>Coup de Coeur</a>
+                <a href className={isActive ? "nav-active" : ""}>
+                  Coup de Coeur
+                </a>
               )}
             </NavLink>
           </li>
